@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AA2A23E276F490D008D2C06 /* OverlayPlanesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2A23D276F490D008D2C06 /* OverlayPlanesViewController.swift */; };
+		7AA2A240276F52ED008D2C06 /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2A23F276F52ED008D2C06 /* OverlayPlane.swift */; };
+		7AA2A242276F5507008D2C06 /* overlay_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2A241276F5507008D2C06 /* overlay_grid.png */; };
 		7AE2FA8C276AF63F00090DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2FA8B276AF63F00090DEF /* AppDelegate.swift */; };
 		7AE2FA8E276AF63F00090DEF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE2FA8D276AF63F00090DEF /* art.scnassets */; };
 		7AE2FA90276AF63F00090DEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2FA8F276AF63F00090DEF /* ViewController.swift */; };
@@ -16,9 +19,14 @@
 		7AE2FAA0276AF6B000090DEF /* wood.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7AE2FA9E276AF6B000090DEF /* wood.jpeg */; };
 		7AE2FAA1276AF6B000090DEF /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AE2FA9F276AF6B000090DEF /* earth.jpg */; };
 		7AE2FAA3276B00D700090DEF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2FAA2276B00D700090DEF /* Extensions.swift */; };
+		7AE2FAA6276C4A0200090DEF /* SimpleBoxWithTouchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2FAA5276C4A0200090DEF /* SimpleBoxWithTouchController.swift */; };
+		7AE2FAA9276C4AA500090DEF /* DetectingPlanesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2FAA8276C4AA500090DEF /* DetectingPlanesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AA2A23D276F490D008D2C06 /* OverlayPlanesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlanesViewController.swift; sourceTree = "<group>"; };
+		7AA2A23F276F52ED008D2C06 /* OverlayPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
+		7AA2A241276F5507008D2C06 /* overlay_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_grid.png; sourceTree = "<group>"; };
 		7AE2FA88276AF63F00090DEF /* ar-with-touch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-with-touch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE2FA8B276AF63F00090DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE2FA8D276AF63F00090DEF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -29,6 +37,8 @@
 		7AE2FA9E276AF6B000090DEF /* wood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wood.jpeg; path = "../../multiple-objects/wood.jpeg"; sourceTree = "<group>"; };
 		7AE2FA9F276AF6B000090DEF /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = earth.jpg; path = "../../multiple-objects/earth.jpg"; sourceTree = "<group>"; };
 		7AE2FAA2276B00D700090DEF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7AE2FAA5276C4A0200090DEF /* SimpleBoxWithTouchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBoxWithTouchController.swift; sourceTree = "<group>"; };
+		7AE2FAA8276C4AA500090DEF /* DetectingPlanesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectingPlanesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AA2A23C276F48EA008D2C06 /* OverlayPlanes */ = {
+			isa = PBXGroup;
+			children = (
+				7AA2A241276F5507008D2C06 /* overlay_grid.png */,
+				7AA2A23D276F490D008D2C06 /* OverlayPlanesViewController.swift */,
+				7AA2A23F276F52ED008D2C06 /* OverlayPlane.swift */,
+			);
+			path = OverlayPlanes;
+			sourceTree = "<group>";
+		};
 		7AE2FA7F276AF63F00090DEF = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +81,9 @@
 		7AE2FA8A276AF63F00090DEF /* ar-with-touch */ = {
 			isa = PBXGroup;
 			children = (
+				7AA2A23C276F48EA008D2C06 /* OverlayPlanes */,
+				7AE2FAA7276C4A8B00090DEF /* DetectingPlanes */,
+				7AE2FAA4276C49BF00090DEF /* BoxWithTouch */,
 				7AE2FA9F276AF6B000090DEF /* earth.jpg */,
 				7AE2FA9E276AF6B000090DEF /* wood.jpeg */,
 				7AE2FA8B276AF63F00090DEF /* AppDelegate.swift */,
@@ -72,6 +95,22 @@
 				7AE2FAA2276B00D700090DEF /* Extensions.swift */,
 			);
 			path = "ar-with-touch";
+			sourceTree = "<group>";
+		};
+		7AE2FAA4276C49BF00090DEF /* BoxWithTouch */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2FAA5276C4A0200090DEF /* SimpleBoxWithTouchController.swift */,
+			);
+			path = BoxWithTouch;
+			sourceTree = "<group>";
+		};
+		7AE2FAA7276C4A8B00090DEF /* DetectingPlanes */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2FAA8276C4AA500090DEF /* DetectingPlanesViewController.swift */,
+			);
+			path = DetectingPlanes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +176,7 @@
 				7AE2FAA1276AF6B000090DEF /* earth.jpg in Resources */,
 				7AE2FA98276AF64100090DEF /* LaunchScreen.storyboard in Resources */,
 				7AE2FA95276AF64100090DEF /* Assets.xcassets in Resources */,
+				7AA2A242276F5507008D2C06 /* overlay_grid.png in Resources */,
 				7AE2FA93276AF63F00090DEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,8 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA2A240276F52ED008D2C06 /* OverlayPlane.swift in Sources */,
+				7AA2A23E276F490D008D2C06 /* OverlayPlanesViewController.swift in Sources */,
 				7AE2FA90276AF63F00090DEF /* ViewController.swift in Sources */,
+				7AE2FAA6276C4A0200090DEF /* SimpleBoxWithTouchController.swift in Sources */,
 				7AE2FAA3276B00D700090DEF /* Extensions.swift in Sources */,
+				7AE2FAA9276C4AA500090DEF /* DetectingPlanesViewController.swift in Sources */,
 				7AE2FA8C276AF63F00090DEF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
